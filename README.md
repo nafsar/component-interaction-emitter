@@ -1,1 +1,1 @@
-# component-interaction-event-emitter
+# component-interaction-emitter
