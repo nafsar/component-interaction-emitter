@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+
+.badge {
+  background: radial-gradient(5px -9px, circle, white 8%, grey 26px);
+  background: -moz-radial-gradient(5px -9px, circle, white 8%, grey 26px);
+  background: -ms-radial-gradient(5px -9px, circle, white 8%, grey 26px);
+  background: -o-radial-gradient(5px -9px, circle, white 8%, grey 26px);
+  background: -webkit-radial-gradient(5px -9px, circle, white 8%, grey 26px);
+  background-color: grey;
+  border: 2px solid white;
+  border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+  box-shadow: 1px 1px 1px black;
+  color: white;
+  font: bold 15px/13px Helvetica, Verdana, Tahoma;
+  height: 16px;
+  padding: 4px 3px 0 3px;
+  text-align: center;
+  min-width: 14px;
+}
+
+.badge {
+  float: left;
+  left: 49%;
+  margin: 6px;
+  position: relative;
+  top: 25px;
+}
+.parent-color {
+  color: black;
+  font-weight:800;
+}
+.child-color {
+  color: brown;
+  font-weight: 800;
+}
+
+.dwn {
+  margin-top: 15px;
+}
+.button {
+    position: relative;
+    background-color: rgb(179, 160, 160);
+    border: none;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius:4px;
+    border:solid 2px white;
+}
+
+.button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+body {
+  background-color: darkgray;
+}
+.line {
+  width: 100%;
+  height: 47px;
+  border-bottom: 4px solid black;
+}
+.child-line {
+  width: 100%;
+  height: 47px;
+  border-bottom: 4px solid brown;
+ 
+}
+.pointer { cursor: pointer; }
