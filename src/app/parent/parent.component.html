@@ -1,4 +1,9 @@
-<p>
-  parent works!
-</p>
-<app-child></app-child>
+<app-child (theCount)="count($event)"></app-child>
+  <div class="line"></div>
+  <div class="parent-color">Parent component</div>
+  <div class="badge">{{mc}}</div>
+  <div style="margin-top:70px;">
+  <span *ngFor="let i of mv" >
+  <span *ngIf="i > 0"><img src="{{mg}}">&nbsp;</span>
+  </span>
+  </div>

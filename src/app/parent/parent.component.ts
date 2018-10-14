@@ -2,17 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-parent',
-  template: `
-  <app-child (theCount)="count($event)"></app-child>
-  <div class="line"></div>
-  <div class="parent-color">Parent component</div>
-  <div class="badge">{{mc}}</div>
-  <div style="margin-top:70px;">
-  <span *ngFor="let i of mv" >
-  <span *ngIf="i > 0"><img src="{{mg}}">&nbsp;</span>
-  </span>
-  </div>
-  `
+  templateUrl: './parent.component.html',
+  styleUrls: ['./parent.component.css']
 })
 export class ParentComponent implements OnInit {
   mc = 0;
